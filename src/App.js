@@ -13,11 +13,9 @@ function App() {
     const fetchData = async () => {
       const data = await getBlogs();
       setBlogs(data);
-      console.log(data);
     };
-    return () => {
-      fetchData();
-    };
+
+    fetchData();
   }, []);
 
   return (
